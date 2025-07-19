@@ -15,6 +15,13 @@
             <span class="nav-link-text me-1">لوحة القيادة</span>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="{{route('admin.articles')}}">
+            <i class="material-symbols-rounded opacity-10">article</i>
+            <span class="nav-link-text me-1">المقالات</span>
+          </a>
+        </li>
+
       @if (auth()->user()->role == 'admin')
         
           
