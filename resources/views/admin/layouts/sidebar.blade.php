@@ -21,6 +21,12 @@
             <span class="nav-link-text me-1">المقالات</span>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="{{ route('profile.edit') }}">
+            <i class="material-symbols-rounded opacity-10">person</i>
+            <span class="nav-link-text me-1">تعديل الحساب</span>
+          </a>
+        </li>
 
       @if (auth()->user()->role == 'admin')
         
