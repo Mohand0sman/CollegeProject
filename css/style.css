@@ -1,12 +1,13 @@
 :root {
     --white-color: #FFF;
     --black-color: #000;
-    --main-color: #1A237E;
+    --main-color: #1295f6 !important;
     --main-color-alt: #1976D2;
-    --section-background: #EEE;
+    --section-background: #fff5f8;
     --secondary-color: #ff9900;
     --main-transition: 00.4s;
     --main-section-padding: 50px;
+    --main-box-shadow:0px 0px 6px 0px #322b2b24;;
 }
 
 * {
@@ -72,24 +73,26 @@ ul {
 }
 
 .main-title.white h2 {
-    color: var(--white-color) !important;
+    color: var(--main-color) !important;
 }
 
 .main-title.white::after,
 .main-title.white::before {
-    background-color: var(--white-color);
+    background-color: var(--main-color);
 }
 
 /* navbar */
 nav {
-    box-shadow: 0px 3px 8px #0000003f,
-        0px -2px 3px #0000003f inset;
+    box-shadow: 0px 0px 6px 0px #322b2b24;
 }
 
 .nav-link {
     font-size: 18px;
     transition: var(--main-transition);
+    color: var(--black-color) !important;
+    font-weight: 400;
 }
+
 
 .nav-link.active {
     color: var(--main-color) !important;
@@ -98,7 +101,7 @@ nav {
 /* home page  */
 
 #home {
-    background-color: var(--main-color);
+    background-color: #fff;
     box-shadow: 0px 6px 16px #00000085;
 
 }
@@ -109,12 +112,13 @@ nav {
 }
 
 #home .content h3 {
-    color: var(--white-color);
+    color: var(--black-color);
     font-size: 45px;
 }
 
 #home .content p {
     font-size: 20px;
+    color: var(--black-color) !important;
 }
 
 @media (max-width : 767px){
@@ -131,10 +135,12 @@ nav {
 #home .content a {
     transition: var(--main-transition) ease;
     border: none;
+    padding: 10px 20px;
+    font-size: 20px;
 }
 
 #home .content a:hover {
-    background-color: var(--main-color-alt);
+    background-color: var(--main-color);
 }
 
 
@@ -142,7 +148,7 @@ nav {
 
 #about {
     padding: var(--main-section-padding) 0;
-    background-color: var(--section-background);
+    background-color: var(--section-background) !important;
 }
 
 #about .container {
@@ -183,8 +189,8 @@ nav {
 
 #explore {
     padding: var(--main-section-padding) 0;
-    background-color: var(--main-color);
-    box-shadow: 0px -6px 16px #00000085;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 4px 0px #322b2b24;
 }
 
 #explore .container {
@@ -197,8 +203,7 @@ nav {
 }
 
 #explore .container .card {
-    box-shadow: -3px 3px 20px #00000094,
-        3px -3px 20px #00000093;
+    box-shadow:0px 0px 13px 1px #64b5f673;
     transition: var(--main-transition) ease;    
 }
 
@@ -236,7 +241,23 @@ nav {
 }
 
 #explore .container .card .text h3 {
-    color: var(--main-color);
+    /* color: var(--main-color); */
+    background-color: var(--main-black-color);
+    color: var(--main-background);
+    margin-top: 4px;
+    font-weight: 400;
+    text-align: center;
+}
+#explore .container .card .text a {
+padding: 8px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    margin-top: 8px;
+    display: block;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
 /* test page  */

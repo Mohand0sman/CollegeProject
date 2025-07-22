@@ -1,7 +1,7 @@
 :root {
      --white-color: #FFF;
     --black-color: #000;
-    --main-color: #1A237E;
+    --main-color: #1295f6;
     --main-color-alt: #1976D2;
     --section-background: #EEE;
     --secondary-color: #ff9900;
@@ -35,7 +35,7 @@ a{
 .container {
     background-color: var(--white-color);
     padding: 0px 8px 10px;
-    border-radius: 15px;
+    border-radius: 7px;
     width: 95%;
 }
 
@@ -47,10 +47,11 @@ a{
 
 .container .question {
     color: var(--main-color);
-    font-size: 42px;
+    font-size: 35px;
     font-weight: bold;
     text-align: right;
     padding: 15px 0;
+    text-align: center;
 }
 
 .container hr {
@@ -60,13 +61,15 @@ a{
 }
 
 .container .answers {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    /* text-align: center; */
+    /* font-weight: bold; */
 
 }
 
 .container .answers .answer {
-    padding: 15px 10px;
+    padding: 16px 10px;
     margin: 3px;
     border-radius: 12px;
     cursor: pointer;
@@ -81,15 +84,15 @@ a{
     color: var(--black-color)
 }
 
-@media (max-width : 400px){
+@media (max-width : 756px){
     .container .question{
-        font-size: 30px;
+        font-size: 27px;
     }
-    .container .answers .answer{
-        padding: 8px 4px;
-        font-size: 16px;
+    /* .container .answers .answer{
+        padding: 10px 5px;
+        font-size: 18px;
         border-radius: 6px;
-    }
+    } */
 }
 .result {
     padding: 20px ;
